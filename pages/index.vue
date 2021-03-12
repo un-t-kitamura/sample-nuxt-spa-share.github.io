@@ -12,14 +12,14 @@
         >
           Documentation
         </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
+        <nuxt-link
+          to="content"
           target="_blank"
           rel="noopener noreferrer"
           class="button--grey"
         >
-          GitHub
-        </a>
+          Content
+        </nuxt-link>
       </div>
     </div>
   </div>
