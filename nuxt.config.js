@@ -41,4 +41,8 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  router: {
+    base: 'sample-nuxt-spa-share.github.io',
+  },
 }
