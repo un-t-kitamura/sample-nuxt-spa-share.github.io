@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <p>isContent noid</p>
+    <p>isContent id:{{ $route.params.id }}</p>
     <nuxt-link to="/">Home<nuxt-link>
   </div>
 </template>
@@ -9,12 +9,12 @@
 export default {
   head() {
       return {
-        title: `Content`,
+        title: `Content id:${this.$route.params.id}`,
         meta: [
         {
             hid: 'description',
             name: 'description',
-            content: `Content description`
+            content: `Content id:${this.$route.params.id} description`
         },
         { hid: 'og:description', property: 'og:description', content: 'ディスクリプション' },
         { hid: 'og:url', property: 'og:url', content: 'ページのURL' },
@@ -29,7 +29,6 @@ export default {
   }
 }
 </script>
-
 <style>
 
 </style>

@@ -12,12 +12,7 @@
         >
           Documentation
         </a>
-        <nuxt-link
-          to="content"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
+        <nuxt-link to="content" rel="noopener noreferrer" class="button--grey">
           Content
         </nuxt-link>
       </div>
@@ -26,7 +21,48 @@
 </template>
 
 <script>
-export default {}
+export default {
+  head() {
+    return {
+      title: `Home`,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: `Home description`,
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: 'ディスクリプション',
+        },
+        { hid: 'og:url', property: 'og:url', content: 'ページのURL' },
+        { hid: 'og:image', property: 'og:image', content: '画像のURL' },
+        {
+          hid: 'twitter:card',
+          property: 'twitter:card',
+          content: 'ディスクリプション',
+        },
+        {
+          hid: 'twitter:title',
+          property: 'twitter:title',
+          content: 'ページのURL',
+        },
+        {
+          hid: 'twitter:description',
+          property: 'twitter:description',
+          content: '画像のURL',
+        },
+        { hid: 'ttwitter:url', property: 'twitter:url', content: '画像のURL' },
+        {
+          hid: 'twitter:image',
+          property: 'twitter:description',
+          content: '画像のURL',
+        },
+      ],
+    }
+  },
+}
 </script>
 
 <style>
