@@ -43,6 +43,6 @@ export default {
   build: {},
 
   router: {
-    base: '/sample-nuxt-spa-share.github.io',
+    base: '/sample-nuxt-spa-share.github.io/dist',
   },
 }
