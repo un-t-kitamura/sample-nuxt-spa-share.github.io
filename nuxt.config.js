@@ -1,3 +1,6 @@
+const environment = process.env.NODE_ENV || 'dev'
+const env = require(`./env.${environment}.js`)
+
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
@@ -13,7 +16,9 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: `${env.BASE_URL}favicon.ico` },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -43,6 +48,6 @@ export default {
   build: {},
 
   router: {
-    base: '/sample-nuxt-spa-share.github.io/dist',
+    base: env.BASE_URL,
   },
 }
