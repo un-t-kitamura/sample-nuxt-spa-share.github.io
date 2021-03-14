@@ -50,4 +50,8 @@ export default {
   router: {
     base: env.BASE_URL,
   },
+
+  generate: {
+    routes: ['/content', '/content/1'],
+  },
 }
