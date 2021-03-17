@@ -12,9 +12,15 @@
         >
           Documentation
         </a>
-        <nuxt-link to="content" rel="noopener noreferrer" class="button--grey">
-          Content
-        </nuxt-link>
+        <a
+          href="https://github.com/nuxt/nuxt.js"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button--grey"
+        >
+          GitHub
+        </a>
+        <nuxt-link to="/content" class="button--grey"> Content </nuxt-link>
       </div>
     </div>
   </div>
@@ -24,12 +30,12 @@
 export default {
   head() {
     return {
-      title: `Home`,
+      title: `home`,
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: `Home description`,
+          content: `Content description`,
         },
         {
           hid: 'og:description',

@@ -1,26 +1,23 @@
-const environment = process.env.NODE_ENV || 'dev'
-const env = require(`./env.${environment}.js`)
-
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
+
+  // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
-  // head: {
-  //   title: 'a',
-  //   htmlAttrs: {
-  //     lang: 'en',
-  //   },
-  //   meta: [
-  //     { charset: 'utf-8' },
-  //     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-  //     { hid: 'description', name: 'description', content: '' },
-  //   ],
-  //   link: [
-  //     { rel: 'icon', type: 'image/x-icon', href: `${env.BASE_URL}favicon.ico` },
-  //   ],
-  // },
+  head: {
+    title: 'home',
+    htmlAttrs: {
+      lang: 'en',
+    },
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'description', name: 'description', content: 'description' },
+    ],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+  },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
@@ -40,19 +37,8 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-    // https://go.nuxtjs.dev/bootstrap
-    'bootstrap-vue/nuxt',
-  ],
+  modules: [],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
-
-  router: {
-    base: env.BASE_URL,
-  },
-
-  generate: {
-    routes: ['/content', '/content/1'],
-  },
 }
