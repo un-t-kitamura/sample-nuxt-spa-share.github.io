@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <div>content</div>
+    <img src="/_nuxt/assets/ogp/content.png" alt="" width="100" height="100" />
     <nuxt-link to="/"></nuxt-link>
   </div>
 </template>
@@ -14,7 +15,7 @@ export default {
         description: 'コンテンツディスクリプション',
         type: 'article',
         url: 'https://nuxt-meta-test.herokuapp.com/content/',
-        image: '~/asstes/ogp/content.png',
+        image: '/_nuxt/assets/ogp/content.png',
       },
     }
   },
