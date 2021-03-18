@@ -14,7 +14,7 @@ export default {
         description: 'コンテンツディスクリプション',
         type: 'article',
         url: 'https://nuxt-meta-test.herokuapp.com/content/',
-        image: '/asstes/ogp/content.png',
+        image: '~/asstes/ogp/content.png',
       },
     }
   },
