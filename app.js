@@ -19,7 +19,7 @@ async function start() {
     }
     html = html.replace(`<title>home</title>`, `<title>${meta.title}</title>`)
     html = html.replace(
-      `<meta data-n-head="1" data-hid="og:image" property="og:image" content="/asstes/ogp/home.png">`,
+      `<meta data-n-head="1" data-hid="og:image" property="og:image" content="~/asstes/ogp/home.png">`,
       `<meta data-n-head="1" data-hid="og:image" property="og:image" content="${meta.url}">`
     )
     res.send(html)
