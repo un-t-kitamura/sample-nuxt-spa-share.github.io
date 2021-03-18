@@ -14,9 +14,13 @@ async function start() {
 
     // const meta = await axios.get('/someting-meta')
     const meta = {
-      title: 'content?',
+      title: 'コンテンツ（これはサーバで変えています）',
     }
     html = html.replace(`<title>home</title>`, `<title>${meta.title}</title>`)
+    html = html.replace(
+      `<meta data-n-head="1" data-hid="og:image" property="og:image" content="/asstes/ogp/home.png">`,
+      `<meta data-n-head="1" data-hid="og:image" property="og:image" content="${meta.title}">`
+    )
     res.send(html)
   })
 

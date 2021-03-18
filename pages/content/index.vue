@@ -7,43 +7,35 @@
 
 <script>
 export default {
+  data() {
+    return {
+      meta: {
+        title: 'コンテンツ（これはSPAで書き換えられています）',
+        description: 'コンテンツディスクリプション',
+        type: 'article',
+        url: 'https://nuxt-meta-test.herokuapp.com/content/',
+        image: '/asstes/ogp/content.png',
+      },
+    }
+  },
   head() {
     return {
-      title: `content`,
+      title: this.meta.title,
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: `Content description`,
+          content: this.meta.description,
         },
+        { hid: 'og:type', property: 'og:type', content: this.meta.type },
+        { hid: 'og:title', property: 'og:title', content: this.meta.title },
         {
           hid: 'og:description',
           property: 'og:description',
-          content: 'ディスクリプション',
+          content: this.meta.description,
         },
-        { hid: 'og:url', property: 'og:url', content: 'ページのURL' },
-        { hid: 'og:image', property: 'og:image', content: '画像のURL' },
-        {
-          hid: 'twitter:card',
-          property: 'twitter:card',
-          content: 'ディスクリプション',
-        },
-        {
-          hid: 'twitter:title',
-          property: 'twitter:title',
-          content: 'ページのURL',
-        },
-        {
-          hid: 'twitter:description',
-          property: 'twitter:description',
-          content: '画像のURL',
-        },
-        { hid: 'ttwitter:url', property: 'twitter:url', content: '画像のURL' },
-        {
-          hid: 'twitter:image',
-          property: 'twitter:description',
-          content: '画像のURL',
-        },
+        { hid: 'og:url', property: 'og:url', content: this.meta.url },
+        { hid: 'og:image', property: 'og:image', content: this.meta.image },
       ],
     }
   },

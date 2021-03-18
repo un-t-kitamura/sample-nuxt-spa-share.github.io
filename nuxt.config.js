@@ -15,6 +15,23 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'description' },
+      { hid: 'og:type', property: 'og:type', content: 'article' },
+      { hid: 'og:title', property: 'og:title', content: 'ホーム' },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: 'ホームディスクリプション',
+      },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://nuxt-meta-test.herokuapp.com',
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: '/asstes/ogp/home.png',
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
