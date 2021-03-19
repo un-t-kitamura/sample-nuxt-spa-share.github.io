@@ -14,8 +14,7 @@ export default {
         description: 'コンテンツディスクリプション',
         type: 'article',
         url: 'https://nuxt-meta-test.herokuapp.com/content/',
-        image:
-          'https://lh3.google.com/u/0/d/1ehwZbr2E3x5N3yMmtSPfumAUrhtrSei9=w2770-h1752-iv1',
+        image: 'https://i.imgur.com/eIpnnv5.png',
       },
     }
   },

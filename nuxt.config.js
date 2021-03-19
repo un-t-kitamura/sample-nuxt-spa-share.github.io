@@ -30,7 +30,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'image',
+        content: 'https://i.imgur.com/gFNzydE.png',
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],

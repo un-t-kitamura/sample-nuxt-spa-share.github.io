@@ -35,8 +35,7 @@ export default {
         description: 'ホームディスクリプション',
         type: 'article',
         url: 'https://nuxt-meta-test.herokuapp.com',
-        image:
-          'https://lh3.googleusercontent.com/fife/ABSRlIotah-01mmrOSvSvcxLcRjl8vRff58FKYgd_IeuikFbmgGoGXAjlH40eB3_TdsKfLOfULH9v69vCHmwbYR_0P5o8-C2Nba1O3AhVW58aHT9I_6BdMxZBIKqRtGZjqFTulG4MkAcnexTO1hLr3Cb5FtWqdKmVpYLL_Y1IKdNhZjXBqi-p71de-tFJTsjgubuub-urbG0GYKG6A3pMZiUH49A8PtNt7y1xGrz5ggCgO1dubdMYcwn0kdywoeYgVBGfBfcgo-kejIdWurkUM66-jjPtWa4fsFjkF_yMSZ3H2kdyTBx6han9ez8tZx9kY8JciOS4GXakRYt0FG72r9daufG9gxC2rAifJOolJbR5_TTiNb72D1OaPqgT_m5DFmCUfGB0FxLxQBRsn0IqCfGtB778HdF-X51q28U1vaFAEIaxnjXZ2-ZwNIY0cEcDtDfJWm8a3sgQGVgWZVoTwXlOBrIL_T3t4UOXbKIKnV24GkqpnQqUan1VtHPTPMSm74ETMIer-ft2ZVi-YEPw2bRlS91uv_2vwTtxyGdZtf29TK5TsGBNFz6kOjl7UaR15MbY_P6OFii_NniAHijsCnVVsr4xAHKgluQ9fPq3s1_5iFKZPGewG0bP7aHbdiJQdy27eIECIUout6xDxwmFusNsuitkLnQkh7LvvuvGQxlpahJygNUmYh1xrP6w5MKx5enpyRVV_Sjlu9ilrbJPx0V7E5r87SwHrglsA=w2770-h1752-ft',
+        image: 'https://i.imgur.com/gFNzydE.png',
       },
     }
   },
