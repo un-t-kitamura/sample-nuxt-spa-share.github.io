@@ -26,7 +26,7 @@ async function start() {
   })
 
   // すべてのルートを Nuxt.js でレンダリング
-  app.use(nuxt.render)
+  app.use('/', nuxt.render)
 
   // ホットリローディングつきの開発モードの場合のみビルド
   if (isDev) {
