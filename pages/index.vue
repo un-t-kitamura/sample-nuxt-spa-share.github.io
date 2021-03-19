@@ -35,7 +35,7 @@ export default {
         description: 'ホームディスクリプション',
         type: 'article',
         url: 'https://nuxt-meta-test.herokuapp.com',
-        image: '/_nuxt/asstes/ogp/home.png',
+        image: '/_nuxt/assets/ogp/home.png',
       },
     }
   },

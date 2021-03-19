@@ -30,7 +30,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: '/_nuxt/assets/ogp/home.png',
+        content: '~/asstes/ogp/home.png',
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
