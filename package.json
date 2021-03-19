@@ -9,8 +9,7 @@
     "generate": "nuxt generate",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
     "lint:style": "stylelint \"**/*.{vue,css}\" --ignore-path .gitignore",
-    "lint": "npm run lint:js && npm run lint:style",
-    "heroku-postbuild": "node app.js"
+    "lint": "npm run lint:js && npm run lint:style"
   },
   "dependencies": {
     "core-js": "^3.8.3",
