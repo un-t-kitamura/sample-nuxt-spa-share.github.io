@@ -16,11 +16,16 @@ async function start() {
     const meta = {
       title: 'コンテンツ（これはサーバで変えています）',
       url: 'https://i.imgur.com/eIpnnv5.png',
+      description: 'ディスクリプション（これはサーバで変えています）',
     }
     html = html.replace(`<title>home</title>`, `<title>${meta.title}</title>`)
     html = html.replace(
       `<meta data-n-head="1" data-hid="og:title" property="og:title" content="ホーム">`,
       `<meta data-n-head="1" data-hid="og:title" property="og:title" content="${meta.title}">`
+    )
+    html = html.replace(
+      `<meta data-n-head="1" data-hid="og:description" property="og:description" content="ホームディスクリプション">`,
+      `<meta data-n-head="1" data-hid="og:description" property="og:description" content="${meta.description}">`
     )
     html = html.replace(
       `<meta data-n-head="1" data-hid="og:image" property="og:image" content="https://i.imgur.com/gFNzydE.png">`,
