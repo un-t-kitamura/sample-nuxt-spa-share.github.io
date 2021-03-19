@@ -8,13 +8,14 @@ async function start() {
   // Nuxt インスタンスを取得
   const nuxt = await loadNuxt(isDev ? 'dev' : 'start')
 
-  app.get('/content/*', async (req, res) => {
+  app.get('/content/:id', async (req, res) => {
     const content = await nuxt.renderRoute('/', req)
     let html = content.html
+    const id = req.params.id
 
     // const meta = await axios.get('/someting-meta')
     const meta = {
-      title: 'コンテンツ（これはサーバで変えています）',
+      title: `コンテンツ:${id}（これはサーバで変えています）`,
       url: 'https://i.imgur.com/eIpnnv5.png',
       description: 'ディスクリプション（これはサーバで変えています）',
     }
