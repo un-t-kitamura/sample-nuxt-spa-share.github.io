@@ -1,7 +1,12 @@
 <template>
   <div class="container">
     <div>content</div>
-    <img src="~/assets/ogp/content.png" alt="" width="100" height="100" />
+    <img
+      src="https://lh3.google.com/u/0/d/1ehwZbr2E3x5N3yMmtSPfumAUrhtrSei9=w2770-h1752-iv1"
+      alt=""
+      width="100"
+      height="100"
+    />
     <nuxt-link to="/"></nuxt-link>
   </div>
 </template>
@@ -15,7 +20,8 @@ export default {
         description: 'コンテンツディスクリプション',
         type: 'article',
         url: 'https://nuxt-meta-test.herokuapp.com/content/',
-        image: '/_nuxt/assets/ogp/content.png',
+        image:
+          'https://lh3.google.com/u/0/d/1ehwZbr2E3x5N3yMmtSPfumAUrhtrSei9=w2770-h1752-iv1',
       },
     }
   },
