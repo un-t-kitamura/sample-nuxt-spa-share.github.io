@@ -1,4 +1,7 @@
-const { loadNuxt, build } = require('nuxt')
+const {
+  loadNuxt,
+  build
+} = require('nuxt')
 
 const app = require('express')()
 const isDev = process.env.NODE_ENV !== 'production'
@@ -13,6 +16,8 @@ async function start() {
     let html = content.html
     const id = req.params.id
 
+    // eslint-disable-next-line no-console
+    console.log('call')
     // const meta = await axios.get('/someting-meta')
     const meta = {
       title: `コンテンツ:${id}（これはサーバで変えています）`,
